@@ -1,0 +1,9 @@
+.DS_Store
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/
+
+# Keep paper sources local by default (you can remove this if you want to publish them).
+paper/

@@ -1,0 +1,12 @@
+title: Dr. Kernel
+description: "Reinforcement learning for Triton kernel generation (paper notes + blog)."
+theme: minima
+
+# GitHub Pages defaults; keep minimal.
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Make post URLs stable and clean.
+permalink: /blog/:year/:month/:day/:title/
+
