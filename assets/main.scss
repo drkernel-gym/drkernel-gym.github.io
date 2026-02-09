@@ -4,25 +4,156 @@
 @import "minima";
 
 /* Better figure handling for paper-style posts */
-figure {
-  margin: 1.25rem 0;
+.paper-blog {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 0.25rem 2.5rem;
 }
 
-figure img {
+.paper-hero {
+  text-align: center;
+  margin: 0.5rem auto 2.4rem;
+}
+
+.paper-title {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.paper-subtitle {
+  max-width: 860px;
+  margin: 0.35rem auto 0;
+  color: #4b5563;
+  font-size: 1.08rem;
+  line-height: 1.55;
+}
+
+.paper-authors {
+  margin: 1rem auto 0;
+  color: #374151;
+  font-size: 1rem;
+}
+
+.paper-links {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.paper-pill {
+  display: inline-block;
+  padding: 0.44rem 0.9rem;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  color: #111827;
+  background: #fff;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.paper-pill:hover {
+  border-color: #9ca3af;
+  background: #f9fafb;
+  text-decoration: none;
+}
+
+.paper-content {
+  max-width: 880px;
+  margin: 0 auto;
+  color: #1f2937;
+  font-size: 1.05rem;
+  line-height: 1.76;
+}
+
+.paper-content h2 {
+  margin-top: 2.35rem;
+  margin-bottom: 0.8rem;
+  font-size: clamp(1.45rem, 2.4vw, 1.9rem);
+  line-height: 1.2;
+}
+
+.paper-content h3 {
+  margin-top: 1.6rem;
+  margin-bottom: 0.55rem;
+  font-size: clamp(1.2rem, 1.8vw, 1.38rem);
+}
+
+.paper-content p,
+.paper-content ul,
+.paper-content ol,
+.paper-content table {
+  margin-bottom: 0.92rem;
+}
+
+.paper-content ul,
+.paper-content ol {
+  padding-left: 1.22rem;
+}
+
+.paper-content li {
+  margin-bottom: 0.38rem;
+}
+
+.paper-content table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-size: 0.96rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.paper-content table th,
+.paper-content table td {
+  padding: 0.55rem 0.72rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.paper-content table th {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+.paper-content table tr:last-child td {
+  border-bottom: none;
+}
+
+.paper-content figure {
+  margin: 1.55rem 0 1.25rem;
+}
+
+.paper-content figure img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
 }
 
-figcaption {
+.paper-content figcaption {
   margin-top: 0.5rem;
-  font-size: 0.95rem;
-  color: #666;
+  font-size: 0.92rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.paper-content code {
+  padding: 0.12rem 0.3rem;
+  border-radius: 6px;
+  background: #f3f4f6;
+}
+
+.paper-content pre code {
+  background: transparent;
 }
 
 /* Make inline code blocks a bit easier to read for long identifiers */
 code {
   word-break: break-word;
 }
-
